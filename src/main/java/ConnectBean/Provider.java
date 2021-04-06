@@ -19,4 +19,5 @@ public interface Provider {
     String HOST = "localhost:5432";
     String PORT="5432";
     String URL="jdbc:postgresql://localhost:5432/erp-database" ;
+    String REPORT_PATH ="F:\\Duan\\Lab\\Report";
 }
