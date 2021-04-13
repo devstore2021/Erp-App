@@ -5,26 +5,12 @@
                 xmlns:p="http://primefaces.org/ui"
                 template="templates/mainchitra.xhtml"
                 xmlns:b="http://bootsfaces.net/ui">
-    <ui:define name="left">   
-        
+    <ui:define name="content">   
     
+         <p:graphicImage value="/resources/img/kid-zone.jpg" height="100%" width="100%" />
+     
+ 
     </ui:define>     
-    
-   <ui:define name="content">   
-       <div class="container ">
-           <h:outputLabel value="#{systemManagedBean.giohethong}" style="font-weight: bold">
-              <f:convertDateTime type="both" pattern="dd-MM-yyyy"/>
-           </h:outputLabel>
-           
-           <h:outputLabel value="#{systemManagedBean.model.userid}" style="font-weight: bold">
-             
-           </h:outputLabel>
-           <h:outputLabel value="#{systemManagedBean.model.homebranch}" style="font-weight: bold">
-             
-           </h:outputLabel>
-         
-       </div>   
-   </ui:define>
-    
+ 
     
 </ui:composition>
