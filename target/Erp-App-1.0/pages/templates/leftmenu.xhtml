@@ -1,0 +1,151 @@
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:ui="http://java.sun.com/jsf/facelets"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:b="http://bootsfaces.net/ui">
+
+    <ui:composition>
+        
+        <h:form   >
+            <b:flyOutMenu style="width: 100%"  >
+                <b:navLink value="Chi trả " disabled="true"  />
+                <b:navLink  />
+                <b:dropMenu value="Tìm kiếm thông tin">
+                    <b:navLink value="Tìm khách hàng"  outcome="timkiemkhachhang"/>
+                    <b:navLink />
+                    <b:navLink value="Tìm giao dịch"  outcome="testreport"/>
+                    <b:navLink />
+                    <b:navLink value="Xác nhận gọi khách"  outcome="timkiemthongtingiaodich"/>
+                    <b:navLink />
+                </b:dropMenu>
+                <b:navLink />
+                <b:dropMenu value="Công nợ nhân viên">
+                    <b:dropMenu value="Tạm ứng-Hoàn ứng">
+                        <b:navLink value="Tạm ứng" disabled="true"  />
+                        <b:navLink />
+                        <b:navLink value="Tạm ứng chi nhà" />
+                        <b:navLink />
+                        <b:navLink value="Tạm ứng chi quầy" />
+                        <b:navLink />
+                        <b:navLink value="Tạm ứng phát sinh" />
+                        <b:navLink />
+                        <b:navLink value="Hoàn ứng" disabled="true"  />
+                        <b:navLink />
+                        <b:navLink value="Hoàn ứng cuối tháng" />
+                        <b:navLink />
+                        <b:navLink value="Hoàn ứng đầu ngày" />
+                        <b:navLink />
+                        <b:navLink value="Hoàn ứng phát sinh " />
+                        <b:navLink />
+                    </b:dropMenu>
+                    <b:navLink />
+                    <b:dropMenu value="Quản lý quỹ">
+                        <b:navLink value="Dịch vụ khách hàng" disabled="true"  />
+                        <b:navLink />
+                        <b:navLink value="Xác nhận đợt chi tiền" />
+                        <b:navLink />              
+                    </b:dropMenu>
+                    <b:navLink />
+                    <b:dropMenu value="Giao nhận hồ sơ">
+                        <b:navLink value="Giao hồ sơ" />
+                        <b:navLink />
+                        <b:navLink value="Chuyển hồ sơ" />
+                        <b:navLink />
+                        <b:navLink value="Nhận hồ sơ ngày trước" />
+                        <b:navLink />
+                        <b:navLink value="Nhận hồ sơ trong ngày" />
+                        <b:navLink />
+                        <b:navLink value="Xác nhận đợt hồ sơ" />
+                        <b:navLink />
+                        <b:navLink value="Phục hồi đợt hồ sơ" />
+                    </b:dropMenu>
+                    <b:navLink />
+                    <b:dropMenu value="Giao nhận phát sinh">
+                        <b:navLink value="Tạm ứng bổ sung hồ sơ" outcome="tamungphainhhoso" />
+                        <b:navLink />
+                        <b:navLink value="Xác nhận đợt hồ sơ" outcome="xacnhandothpsphatsinh"/>
+                        <b:navLink />
+                        <b:navLink value="Thông tin đợt hồ sơ" outcome="thongtindothsphatsinh" />
+                        <b:navLink />
+                        <b:navLink value="Xác nhận hoàn ứng" outcome="xacnhanhshoanungps" />
+                        <b:navLink />
+                        
+                    </b:dropMenu>
+                    <b:navLink />
+                    <b:dropMenu value="Số dư nhân viên">
+                        <b:navLink />
+                        <b:navLink value="Tạo số liệu" outcome="taosolieucongno"/>
+                        <b:navLink />  
+                    </b:dropMenu>
+                </b:dropMenu>
+                <b:navLink />
+                   <b:dropMenu value="Nghiệp vụ khác">
+                        <b:navLink />
+                        <b:navLink value="Tạo Barcode" outcome="thembarcode"/>
+                        <b:navLink />
+                    </b:dropMenu>
+                <b:navLink />
+                <b:navLink value="Hồi báo" disabled="true"  />
+                 <b:navLink />
+                      <b:dropMenu value="Xác minh ">
+                        <b:navLink value="" />
+                        <b:navLink value="" />
+                        <b:navLink value="" />
+                      </b:dropMenu>
+                  <b:navLink />
+                      <b:dropMenu value="Xuất dữ liệu ">
+                           <b:navLink />
+                           <b:navLink value="Xuất dữ liệu theo đại lý" outcome="hoibaodaily" />
+                         <b:navLink />
+                        <b:navLink value="Xuất dữ liệu theo đối tác" />
+                         <b:navLink />
+                         <b:navLink value="Hồi báo Omnex" outcome="exportsolieuomnex" />
+                         <b:navLink />
+                      </b:dropMenu>
+                   <b:navLink />
+                      <b:dropMenu value="Xác nhận thông tin ">
+                        <b:navLink />  
+                        <b:navLink value="Dự liệu chi tra đối tác(P-C)" outcome="xacnhandothbtoday" />
+                        <b:navLink />
+                        <b:navLink value="" />
+                      </b:dropMenu>
+                <b:navLink />
+                <b:navLink value="Báo cáo" disabled="true"  />
+                 <b:navLink />
+                <b:dropMenu value="In ấn">
+                    <b:dropMenu value="In biên nhận">
+                         <b:navLink />
+                        <b:navLink value="Biên nhận chi nhà" />
+                         <b:navLink />
+                        <b:navLink value="Biên nhận chi quầy" />
+                         <b:navLink />
+                        <b:navLink value="Biên nhận chuyển khoản" />
+                         <b:navLink />
+                    </b:dropMenu>
+                </b:dropMenu>
+                <b:navLink />
+                <b:dropMenu value="Báo cáo chi trả">
+                     <b:navLink />
+                    <b:dropMenu value="Báo cáo chi trả">
+                        
+                    </b:dropMenu>
+                      <b:navLink />
+                    <b:dropMenu value="Báo cáo tồn động">
+                        
+                    </b:dropMenu>
+                </b:dropMenu>
+                <b:navLink />
+                <b:dropMenu value="Báo cáo khác ">
+                     <b:navLink />
+                    <b:dropMenu value="Thông báo ">
+                         <b:navLink />
+                         <b:navLink value="Thông báo hồ sơ MG" />
+                    </b:dropMenu>
+   
+                </b:dropMenu>
+            </b:flyOutMenu>   
+        </h:form>
+
+    </ui:composition>
+
+
+</html>

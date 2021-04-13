@@ -1,0 +1,5 @@
+ConnectBean\ConnectionProvider.class
+ConnectBean\Provider.class
+Model\Database.class
+com\mycompany\generator\ReportGenerator.class
+ConnectBean\TestDb.class

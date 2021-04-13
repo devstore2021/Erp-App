@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:f="http://java.sun.com/jsf/core"
+      xmlns:ui="http://java.sun.com/jsf/facelets"
+      xmlns:b="http://bootsfaces.net/ui">
+
+    <h:head>
+
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta content="text/html; charset=UTF-8" http-equiv="Content-Type" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />	
+        <h:outputStylesheet name="bootstrap/css/bootstrap.css" />
+
+        <title>Login</title>
+
+   
+    </h:head> 
+    <h:body>
+        <h:form id="loginForm">
+            <b:container fluid="true"  class="col-lg-10" >
+                <b:panel title="Đăng nhập" look="primary" collapsible="false">
+                    <b:row>
+                        <b:column medium-screen="2">
+                            <h:outputText value="Username:"/>
+                        </b:column>
+                        <b:column span="4">
+                            <b:inputText id="username"  placeholder="Username" value="#{loginManagerBean.username}" >
+                                <f:facet name="prepend">
+                                    <b:icon name="user" />
+                                </f:facet>
+                            </b:inputText>
+                        </b:column>
+                        <b:column span="6">
+                            <b:message for="username" />
+                        </b:column>
+                    </b:row>
+                    <b:row >
+                        <b:column span="2">
+                            <h:outputText value="Password:" />
+                        </b:column>
+                        <b:column span="4">
+                            <b:inputSecret placeholder="Password" id="password"  value="#{loginManagerBean.password}" >
+                                <f:facet name="prepend">
+                                    <b:iconAwesome name="key" />
+                                </f:facet>
+                            </b:inputSecret>
+                        </b:column>
+                    </b:row>
+                    <b:row>
+                        <b:column span="2" offset="2">
+                            <b:link value="Quên mật khẩu ?"/>
+                        </b:column>
+                    </b:row>
+                    <b:row>
+                        <b:column span="2" offset="2">
+                            <b:commandButton action="#{loginManagerBean.validateusernamepassword}"  value="Đăng nhập" look="primary"   style="width:100%" />
+                        </b:column>
+                        <b:column span="2">
+                            <b:commandButton value="Đăng ký"  look="danger" style="width:100%" />
+                        </b:column>
+                    </b:row>
+                </b:panel>
+            </b:container>
+        </h:form>
+
+    </h:body>
+
+   
+
+</html>
+

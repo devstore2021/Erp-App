@@ -28,7 +28,7 @@ public class TestDb {
             System.out.println("Hello World");
             String idcode="ROW001";
             // Tạo một câu SQL có 1 tham số (?)
-            String sql = " SELECT * FROM  public.city_list ";
+            String sql = " SELECT * FROM  public.SMTB_USER ";
             
             // Tạo một đối tượng PreparedStatement.
             PreparedStatement pstm = con.prepareStatement(sql);
@@ -41,7 +41,7 @@ public class TestDb {
              while (rs.next()) {
                  
                 String kqtam="";
-                kqtam=rs.getString("city_name");
+                kqtam=rs.getString("user_id");
                 System.out.println(kqtam);
             }
              

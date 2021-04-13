@@ -1,0 +1,46 @@
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:ui="http://java.sun.com/jsf/facelets"
+      xmlns:b="http://bootsfaces.net/ui">
+ 
+    <ui:composition>
+        <div class="container-fluid">
+            <b:row  >
+                <b:column span="2">
+                  <b:panel id="scrreeleft" class="well" >
+                     <ui:insert name = "left" >
+                          <ui:include src="leftmenuchitra.xhtml" />
+                     </ui:insert>
+                  </b:panel>
+                </b:column>
+                <b:column span="10">
+                    <b:panel id="scrree"  class="well" >
+                          <ui:insert name="content" />          
+                    </b:panel>
+                </b:column>
+            </b:row>
+            <b:row>
+                <b:panel>
+                     <ui:insert name = "footer" >
+                          <ui:include src="footer.xhtml" />
+                    </ui:insert>
+                </b:panel>
+            </b:row>
+        </div>
+        
+        <script>
+
+             function myFunction() {
+             var leftvar = screen.height-(screen.height/2.4);
+
+            var elem = document.getElementById('scrreecontent');
+            var elem1 = document.getElementById('scrreeleftcontent');
+
+            elem.style.height = leftvar + 'px';
+            elem1.style.height = leftvar + 'px';
+        }
+              window.onload = myFunction;
+    
+        </script>
+
+    </ui:composition>
+</html>
