@@ -1,0 +1,30 @@
+<ui:composition xmlns="http://www.w3.org/1999/xhtml"  
+                xmlns:h="http://java.sun.com/jsf/html"  
+                xmlns:f="http://java.sun.com/jsf/core"  
+                xmlns:ui="http://java.sun.com/jsf/facelets"
+                xmlns:p="http://primefaces.org/ui"
+                template="templates/mainchitra.xhtml"
+                xmlns:b="http://bootsfaces.net/ui">
+    <ui:define name="left">   
+        
+    
+    </ui:define>     
+    
+   <ui:define name="content">   
+       <div class="container ">
+           <h:outputLabel value="#{systemManagedBean.giohethong}" style="font-weight: bold">
+              <f:convertDateTime type="both" pattern="dd-MM-yyyy"/>
+           </h:outputLabel>
+           
+           <h:outputLabel value="#{systemManagedBean.model.userid}" style="font-weight: bold">
+             
+           </h:outputLabel>
+           <h:outputLabel value="#{systemManagedBean.model.homebranch}" style="font-weight: bold">
+             
+           </h:outputLabel>
+         
+       </div>   
+   </ui:define>
+    
+    
+</ui:composition>
